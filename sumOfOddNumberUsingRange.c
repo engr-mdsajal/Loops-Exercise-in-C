@@ -1,5 +1,5 @@
 /*
-Program to find sum of ODD numbers from 1 to n
+Program to find sum of ODD numbers Using Range from 1 to n
 */
 
 #include<stdio.h>
@@ -12,7 +12,9 @@ int main(){
 
   printf("Enter End Number= ");
   scanf("%d",&end);
-
+  if(start%2==0){
+    start++;
+  }
   for(i=start;i<=end;i+=2){
 
      sum += i;
